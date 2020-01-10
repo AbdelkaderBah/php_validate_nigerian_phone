@@ -99,7 +99,7 @@ class NigerianPhoneTest extends TestCase {
 	}
 
 	public function testIsLandLine() {
-		foreach ( self::$landLines as $phone => $value ) {
+		foreach ( self::$landLines as $key => $phone ) {
 			$app = new NigerianPhone( $phone );
 			$this->assertTrue( $app->isValidLandLine );
 		}
